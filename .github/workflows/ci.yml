@@ -16,7 +16,7 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v2
       with:
-        node-version: '18'
+        node-version: '21'
 
     - name: Install dependencies
       run: npm install
@@ -24,7 +24,7 @@ jobs:
     
     - name: Build Docker image
       run: |
-        docker build -t asmanjan/nodejs-image:latest .
+        docker build -t asmanjan/nodejs-image:21 .
 
     - name: Log in to Docker Hub
       uses: docker/login-action@v1
@@ -34,4 +34,4 @@ jobs:
 
     - name: Push Docker image to Docker Hub
       run: |
-        docker push asmanjan/nodejs-image:latest
+        docker push asmanjan/nodejs-image:21
