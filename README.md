@@ -2,7 +2,7 @@
 
 
 2. Sonarcube setup done on cloud. Please find the below URL-
-sonarcloud.io
+https://sonarcloud.io/summary/new_code?id=abhipratapsingh21_my-nodejs-hello-world
 Note: I will show the SonarCube setup during Interview Demo.
 
 
