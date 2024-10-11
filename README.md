@@ -5,9 +5,11 @@ Sonarcube setup done on cloud. Please find the below URL-
 sonarcloud.io
 Note: I will show the SonarCube setup during Interview Demo.
 ==============================================================****
+
 DockerHub- https://hub.docker.com/r/asmanjan/nodejs-image
 
 ==============================================================
+
 docker run -itd -p 8080:80 asmanjan/nodejs-image
 
 root@LAPTOP-AIQD9I4H:/home/test# docker ps
