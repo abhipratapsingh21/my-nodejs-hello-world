@@ -10,7 +10,7 @@ Note: I will show the SonarCube setup during Interview Demo.
 
 
 
-4. docker run -itd -p 8080:80 asmanjan/nodejs-image
+4. docker run -itd -p 8080:80 asmanjan/nodejs-image:21
 
 root@LAPTOP-AIQD9I4H:/home/test# docker ps
 CONTAINER ID   IMAGE                   COMMAND                  CREATED         STATUS         PORTS
