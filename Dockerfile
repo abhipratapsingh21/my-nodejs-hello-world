@@ -1,21 +1,14 @@
-# nodejs base image
-FROM node:21
-
-# Set the working directory
+# Build stage
+FROM node:21-slim AS builder
 WORKDIR /usr/src/app
-
-# Copy package.json and package-lock.json
 COPY package*.json ./
-
-# Install dependencies
 RUN npm install
-
-# Copy the rest of the application code
 COPY . .
 
-# Expose the application port
+# Production stage
+FROM node:21-slim
+WORKDIR /usr/src/app
+COPY --from=builder /usr/src/app ./
+RUN npm prune --production
 EXPOSE 8080
-
-# Start the application
 CMD ["node", "index.js"]
-
