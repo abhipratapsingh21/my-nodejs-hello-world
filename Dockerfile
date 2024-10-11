@@ -3,7 +3,7 @@ FROM node:21-slim AS builder
 WORKDIR /usr/src/app
 COPY package*.json ./
 RUN npm install --ignore-scripts
-COPY . .
+COPY index.js LICENSE README.md ./
 
 # Production stage
 FROM node:21-slim
