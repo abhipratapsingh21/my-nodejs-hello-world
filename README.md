@@ -1,16 +1,16 @@
-NodeJs app- http://localhost:8080
+1. NodeJs app- http://localhost:8080
 
-****==============================================================
-Sonarcube setup done on cloud. Please find the below URL-
+
+2. Sonarcube setup done on cloud. Please find the below URL-
 sonarcloud.io
 Note: I will show the SonarCube setup during Interview Demo.
-==============================================================****
 
-DockerHub- https://hub.docker.com/r/asmanjan/nodejs-image
 
-==============================================================
+3. DockerHub- https://hub.docker.com/r/asmanjan/nodejs-image
 
-docker run -itd -p 8080:80 asmanjan/nodejs-image
+
+
+4. docker run -itd -p 8080:80 asmanjan/nodejs-image
 
 root@LAPTOP-AIQD9I4H:/home/test# docker ps
 CONTAINER ID   IMAGE                   COMMAND                  CREATED         STATUS         PORTS
