@@ -2,7 +2,7 @@
 FROM node:21-slim AS builder
 WORKDIR /usr/src/app
 COPY package*.json ./
-RUN npm install
+RUN npm install --ignore-scripts
 COPY . .
 
 # Production stage
