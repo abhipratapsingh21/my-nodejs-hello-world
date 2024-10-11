@@ -1,19 +1,13 @@
-{
-  "name": "my-nodejs-hello-world",
-  "version": "1.0.0",
-  "description": "Hello World sample app",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/abhipratapsingh21/nodejs-hello-world.git"
-  },
-  "author": "",
-  "license": "abhipratapsingh21",
-  "bugs": {
-    "url": "https://github.com/abhipratapsingh21/my-nodejs-hello-world/issues"
-  },
-  "homepage": "https://github.com/abhipratapsingh21/my-nodejs-hello-world#readme"
-}
+var http = require('http');
+
+var server = http.createServer(function(request, response) {
+
+    response.writeHead(200, {"Content-Type": "text/plain"});
+    response.end("Hello World!");
+
+});
+
+var port = 80;
+server.listen(port);
+
+console.log("Server running at http://localhost:%d", port);
