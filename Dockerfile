@@ -9,5 +9,10 @@ COPY . .
 FROM node:21-slim
 WORKDIR /usr/src/app
 COPY --from=builder /usr/src/app ./
+
+# Create a non-root user
+RUN useradd -m appuser
+USER appuser
+
 EXPOSE 8080
 CMD ["node", "index.js"]
