@@ -1,4 +1,6 @@
 node_modules
 npm-debug.log
-Dockerfile
 .git
+.env
+Dockerfile
+*.md
